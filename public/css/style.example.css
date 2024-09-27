@@ -1,0 +1,187 @@
+@media (min-width: 992px) {
+    .row-cols-lg-3>* {
+      width: 20%;
+    }
+
+    .navbar-expand-lg .offcanvas {
+      position: absolute !important;
+      visibility: hidden !important;
+    }
+  }
+
+@media (max-width: 991.98px) {
+    .nav{
+        display: none;
+    }
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif !important;
+}
+
+h1{
+    font-size: 36px !important;
+}
+
+h2{
+    font-size: 24px !important;
+}
+
+p{
+    font-size: 14px !important;
+}
+
+#main-sec{
+    background-color: #F1F3FF;
+    height: 504px;
+}
+
+.me-md-auto {
+    margin-left: 0.84em;
+  }
+
+.nav-pills .nav-link.active{
+    background-color: #5CB85F;
+}
+
+.btn {
+    font-size: 14px;
+    border-radius: 0%;
+}
+
+.btn:hover{
+    background-color: #5CB85F;
+    border-color: #5CB85F;
+}
+
+.btn-primary {
+    --bs-btn-bg: #5CB85F;
+    --bs-btn-border-color: #5CB85F;
+    --bs-btn-active-bg: #F1F3FF;
+    --bs-btn-active-border-color: #F1F3FF;
+
+}
+
+.nav{
+    --bs-nav-link-color: rgb(0, 0, 0);
+}
+
+.row {
+    --bs-gutter-x: 6rem;
+}
+  
+li{
+    font-size: 14px;
+}
+
+.list-link{
+    list-style: none;
+    font-size: 14px;
+}
+
+.main-img{
+    position: relative;
+    bottom: -57px;
+    right: -50px;
+}
+
+.my-5 {
+    margin-top: 1rem !important;
+    margin-bottom: 10rem !important;
+}
+
+.g-4, .gx-4 {
+    --bs-gutter-x: 1.5rem !important;
+} 
+
+.offcanvas.offcanvas-end {
+    width: 50%;
+    height: 200px;
+}
+
+/* filter */
+
+.form-container{
+    position: relative;
+    top: -100px;
+    width: 70%;
+    height: 106px;
+    background-color: white;
+}
+
+.filter-btn{
+    width: 210px;
+    background-color: white;
+    color:rgb(157, 157, 157);
+    text-align: start;
+}
+
+.filter-list{
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 12px;
+}
+
+.filter-ul{
+    list-style: none;
+    padding-inline-start: 5px;
+}
+
+.form-select {
+    font-size: 12px;
+    width: 200px;
+}
+
+.time{
+    background-image: url(../images/landing-page-img/fi_clock.png);
+    background-size:  15px auto;
+}
+
+.form-control{
+    font-size: 12px;
+    width: 200px;
+}
+
+.input-group{
+    width: 200px;
+}
+
+.search-btn{
+    height: 36px;
+    position: relative;
+    bottom:-10px;
+}
+
+/* display section */
+
+.display-card{
+    width: 333px;
+    height: 600px
+}
+
+.card-img-top{
+    width: 300px;
+    height: 180px;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+
+.card-item{
+    width:320px;
+    height:600px;
+}
+
+.btn-utama{
+    background-color: #5CB85F;
+}
+
+/* footer */
+
+.card-body{
+    font-size: 14px;
+}
+
+.footer-card {
+    width: 20%;
+    --bs-card-border-width: none;
+}
