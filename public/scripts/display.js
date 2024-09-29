@@ -1,11 +1,10 @@
 const cars = [];
 const selectedCar = [];
+const carsContainer = document.getElementById("cars");
 
-function display(){
-    selectedCar.length = 0;
-    const carsContainer = document.getElementById("cars");
+function display(passenger){
     for (i=0 ; i<cars.length ; i++){
-        if (cars[i].available == true) {
+        if (cars[i].available && cars[i].capacity >= passenger) {
             selectedCar.push(cars[i]);
         }
     }
@@ -70,19 +69,21 @@ function selectCar() {
 let button = document.getElementById("cari-mobil");
 
 button.addEventListener("click",function(){
+    carsContainer.innerHTML = "";
     cars.length=0;
+    selectedCar.length = 0;
     let {tipe, tanggal, waktu, penumpang} = selectCar();
+    let passenger = Number(penumpang);
     console.log(tipe);
     console.log(tanggal);
     console.log(waktu);
-    console.log(penumpang);
+    console.log(typeof(passenger));
     Car.list.forEach(function(car){
         cars.push(car);
     });
-    display();
+    display(passenger);
     console.log(cars);
     console.log(selectedCar);
 });
-
 
 
